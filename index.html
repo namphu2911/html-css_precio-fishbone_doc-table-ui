@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 <body>
 
 <div class="sp-container">
@@ -20,22 +21,22 @@
   <!-- Desktop Toolbar -->
   <div class="sp-toolbar d-none d-md-flex align-items-center">
     <button class="sp-btn">
-      <i class="bi bi-plus-lg sp-icon-pink"></i> New <i class="bi bi-chevron-down sp-chevron"></i>
+      <iconify-icon icon="fluent-mdl2:add" class="sp-icon-pink"></iconify-icon> New <iconify-icon icon="fluent-mdl2:chevron-down" class="sp-chevron"></iconify-icon>
     </button>
     <button class="sp-btn">
-      <i class="bi bi-box-arrow-up sp-icon-pink"></i> Upload <i class="bi bi-chevron-down sp-chevron"></i>
+      <iconify-icon icon="fluent-mdl2:upload" class="sp-icon-pink"></iconify-icon> Upload <iconify-icon icon="fluent-mdl2:chevron-down" class="sp-chevron"></iconify-icon>
     </button>
     <button class="sp-btn">
-      <i class="bi bi-arrow-repeat sp-icon-pink"></i> Sync
+      <iconify-icon icon="fluent-mdl2:sync-to-p-c" class="sp-icon-pink"></iconify-icon> Sync
     </button>
     <button class="sp-btn">
-      <i class="bi bi-file-earmark-spreadsheet sp-icon-green"></i> Export to Excel
+      <iconify-icon icon="vscode-icons:file-type-excel2" class="sp-icon-green"></iconify-icon> Export to Excel
     </button>
     <button class="sp-btn">
-      <i class="bi bi-share sp-icon-pink"></i> Flow <i class="bi bi-chevron-down sp-chevron"></i>
+      <iconify-icon icon="fluent-mdl2:flow" class="sp-icon-pink"></iconify-icon> Flow <iconify-icon icon="fluent-mdl2:chevron-down" class="sp-chevron"></iconify-icon>
     </button>
     <button class="sp-btn">
-      <i class="bi bi-three-dots"></i>
+      <iconify-icon icon="fluent-mdl2:more"></iconify-icon>
     </button>
   </div>
 
@@ -52,62 +53,67 @@
   <div class="collapse d-md-none" id="mobileMenu">
     <div class="sp-mobile-menu">
       <a href="#" class="sp-mobile-menu-item">
-        <i class="bi bi-plus sp-icon-pink"></i> 
+        <iconify-icon icon="fluent-mdl2:add" class="sp-icon-pink"></iconify-icon>
         <span>New</span>
-        <i class="bi bi-chevron-down sp-chevron"></i>
+        <iconify-icon icon="fluent-mdl2:chevron-down" class="sp-chevron"></iconify-icon>
       </a>
       <a href="#" class="sp-mobile-menu-item">
-        <i class="bi bi-box-arrow-up sp-icon-pink"></i> 
+        <iconify-icon icon="fluent-mdl2:upload" class="sp-icon-pink"></iconify-icon>
         <span>Upload</span>
-        <i class="bi bi-chevron-down sp-chevron"></i>
+        <iconify-icon icon="fluent-mdl2:chevron-down" class="sp-chevron"></iconify-icon>
       </a>
       <a href="#" class="sp-mobile-menu-item">
-        <i class="bi bi-arrow-repeat sp-icon-pink"></i> 
+        <iconify-icon icon="fluent-mdl2:sync-to-p-c" class="sp-icon-pink"></iconify-icon>
         <span>Sync</span>
       </a>
       <a href="#" class="sp-mobile-menu-item sp-menu-highlight">
-        <i class="bi bi-file-earmark-spreadsheet sp-icon-green"></i> 
+        <iconify-icon icon="fluent-mdl2:excel-document" class="sp-icon-green"></iconify-icon>
         <span>Export to Excel</span>
       </a>
       <a href="#" class="sp-mobile-menu-item">
-        <i class="bi bi-share sp-icon-pink"></i> 
+        <iconify-icon icon="fluent-mdl2:flow" class="sp-icon-pink"></iconify-icon>
         <span>Flow</span>
-        <i class="bi bi-chevron-down sp-chevron"></i>
+        <iconify-icon icon="fluent-mdl2:chevron-down" class="sp-chevron"></iconify-icon>
       </a>
       <a href="#" class="sp-mobile-menu-item">
-        <i class="bi bi-three-dots"></i>
+        <iconify-icon icon="fluent-mdl2:more"></iconify-icon>
       </a>
     </div>
   </div>
 
   <!-- Title -->
-  <h1 class="sp-title">Documents</h1>
+  <h1 class="sp-title ms-4">Documents</h1>
 
   <!-- Desktop Table -->
-  <div class="table-responsive d-none d-md-block">
+  <div class="table-responsive d-none d-md-block ms-4">
     <table class="table sp-table">
       <thead>
         <tr>
+          <th class="col-icon">            
+            <iconify-icon icon="fluent-mdl2:page" class="th-icon"></iconify-icon>
+          </th>
           <th>
-            <i class="bi bi-file-earmark th-icon"></i>
             <span class="th-text">Name</span>
-            <i class="bi bi-chevron-down th-chevron"></i>
+            <iconify-icon icon="fluent-mdl2:chevron-down" class="th-chevron"></iconify-icon>
           </th>
           <th>
             <span class="th-text">Modified</span>
-            <i class="bi bi-chevron-down th-chevron"></i>
+            <iconify-icon icon="fluent-mdl2:chevron-down" class="th-chevron"></iconify-icon>
           </th>
           <th>
             <span class="th-text">Modified By</span>
-            <i class="bi bi-chevron-down th-chevron"></i>
+            <iconify-icon icon="fluent-mdl2:chevron-down" class="th-chevron"></iconify-icon>
           </th>
-          <th class="add-column">+ Add column</th>
+          <th>
+            <iconify-icon icon="fluent-mdl2:add"></iconify-icon>
+            <span class="th-text">Add column</span>
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td class="col-icon"><iconify-icon icon="ooui:folder-placeholder-rtl" class="folder-icon"></iconify-icon></td>
           <td class="name-cell">
-            <i class="bi bi-folder-fill folder-icon"></i>
             <span>CAS</span>
           </td>
           <td>April 30</td>
@@ -115,8 +121,9 @@
           <td></td>
         </tr>
         <tr>
+          <td class="col-icon"><iconify-icon icon="uiw:file-excel" class="excel-icon"></iconify-icon></td>
           <td class="name-cell">
-            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <iconify-icon icon="fluent-mdl2:glimmer" class="sp-icon-pink"></iconify-icon>
             <span>CoasterAndBargeLoading.xlsx</span>
           </td>
           <td>A few seconds ago</td>
@@ -124,8 +131,9 @@
           <td></td>
         </tr>
         <tr>
+          <td class="col-icon"><iconify-icon icon="uiw:file-excel" class="excel-icon"></iconify-icon></td>
           <td class="name-cell">
-            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <iconify-icon icon="fluent-mdl2:glimmer" class="sp-icon-pink"></iconify-icon>
             <span>RevenueByServices.xlsx</span>
           </td>
           <td>A few seconds ago</td>
@@ -133,8 +141,9 @@
           <td></td>
         </tr>
         <tr>
+          <td class="col-icon"><iconify-icon icon="uiw:file-excel" class="excel-icon"></iconify-icon></td>
           <td class="name-cell">
-            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <iconify-icon icon="fluent-mdl2:glimmer" class="sp-icon-pink"></iconify-icon>
             <span>RevenueByServices2016.xlsx</span>
           </td>
           <td>A few seconds ago</td>
@@ -142,8 +151,9 @@
           <td></td>
         </tr>
         <tr>
+          <td class="col-icon"><iconify-icon icon="uiw:file-excel" class="excel-icon"></iconify-icon></td>
           <td class="name-cell">
-            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <iconify-icon icon="fluent-mdl2:glimmer" class="sp-icon-pink"></iconify-icon>
             <span>RevenueByServices2017.xlsx</span>
           </td>
           <td>A few seconds ago</td>
@@ -161,7 +171,7 @@
     <div class="sp-mobile-card">
       <div class="sp-card-row">
         <span class="sp-card-label">File Type</span>
-        <span class="sp-card-value"><i class="bi bi-folder-fill folder-icon"></i></span>
+        <span class="sp-card-value"><iconify-icon icon="fluent-mdl2:fabric-folder-fill" class="folder-icon"></iconify-icon></span>
       </div>
       <div class="sp-card-row">
         <span class="sp-card-label">Name</span>
@@ -181,7 +191,7 @@
     <div class="sp-mobile-card">
       <div class="sp-card-row">
         <span class="sp-card-label">File Type</span>
-        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+        <span class="sp-card-value"><iconify-icon icon="fluent-mdl2:excel-document" class="excel-icon"></iconify-icon></span>
       </div>
       <div class="sp-card-row">
         <span class="sp-card-label">Name</span>
@@ -201,7 +211,7 @@
     <div class="sp-mobile-card">
       <div class="sp-card-row">
         <span class="sp-card-label">File Type</span>
-        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+        <span class="sp-card-value"><iconify-icon icon="fluent-mdl2:excel-document" class="excel-icon"></iconify-icon></span>
       </div>
       <div class="sp-card-row">
         <span class="sp-card-label">Name</span>
@@ -221,7 +231,7 @@
     <div class="sp-mobile-card">
       <div class="sp-card-row">
         <span class="sp-card-label">File Type</span>
-        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+        <span class="sp-card-value"><iconify-icon icon="fluent-mdl2:excel-document" class="excel-icon"></iconify-icon></span>
       </div>
       <div class="sp-card-row">
         <span class="sp-card-label">Name</span>
@@ -241,7 +251,7 @@
     <div class="sp-mobile-card">
       <div class="sp-card-row">
         <span class="sp-card-label">File Type</span>
-        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+        <span class="sp-card-value"><iconify-icon icon="fluent-mdl2:excel-document" class="excel-icon"></iconify-icon></span>
       </div>
       <div class="sp-card-row">
         <span class="sp-card-label">Name</span>

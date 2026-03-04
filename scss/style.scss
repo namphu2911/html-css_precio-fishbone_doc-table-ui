@@ -1,12 +1,15 @@
 // SharePoint/OneDrive Classic Colors
 $sp-text: #333333;
 $sp-text-light: #666666;
+$sp-head-border: #d6d6d6;
 $sp-border: #e5e5e5;
-$sp-hover: #f4f4f4;
+$sp-bg: #f4f4f4;
+$sp-bg-light: #ffffff;
 $sp-pink: #b4009e;
 $sp-green: #217346;
-$sp-folder: #dcb67a;
+$sp-folder: #a6a6a6;
 $sp-excel: #217346;
+$sp-mobile-menu-bg: #f3f3f3;
 
 * {
   box-sizing: border-box;
@@ -31,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0;
-  background-color: #f4f4f4;
+  background-color: $sp-bg;
 }
 
 .sp-btn {
@@ -48,7 +51,7 @@ body {
   white-space: nowrap;
 
   &:hover {
-    background: $sp-hover;
+    background: $sp-bg-light;
   }
 }
 
@@ -73,6 +76,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 0;
+  background-color: $sp-mobile-menu-bg;
 }
 
 .sp-hamburger-btn {
@@ -123,7 +127,7 @@ body {
   }
 
   &:hover {
-    background: $sp-hover;
+    background: $sp-bg;
   }
 
   i:first-child {
@@ -152,7 +156,7 @@ body {
 /* ============ TITLE ============ */
 .sp-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 100;
   color: $sp-text;
   margin: 20px 0 24px 0;
   padding: 0;
@@ -171,12 +175,12 @@ body {
 
   thead {
     tr {
-      border-bottom: 1px solid $sp-border;
+      border-bottom: 2px solid $sp-head-border;
     }
 
     th {
       font-weight: 400;
-      font-size: 12px;
+      font-size: 14px;
       color: $sp-text-light;
       padding: 8px 12px 8px 0;
       text-align: left;
@@ -184,35 +188,38 @@ body {
       border: none;
       background: transparent;
 
+      &.col-icon {
+        width: 58px;
+        padding-left: 32px;
+      }
+
       .th-icon {
-        font-size: 14px;
+        font-size: 18px;
         color: $sp-text-light;
-        margin-right: 6px;
       }
 
       .th-text {
-        color: $sp-text-light;
+        color: $sp-text;
       }
 
       .th-chevron {
-        font-size: 8px;
+        font-size: 14px;
         color: $sp-text-light;
-        margin-left: 4px;
       }
-    }
-
-    .add-column {
-      color: $sp-text-light;
-      font-size: 12px;
     }
   }
 
   tbody {
     tr {
       border-bottom: 1px solid $sp-border;
+      background-color: transparent;
 
       &:hover {
-        background: $sp-hover;
+        background-color: $sp-bg !important;
+
+        td {
+          background-color: $sp-bg;
+        }
       }
     }
 
@@ -222,12 +229,31 @@ body {
       color: $sp-text;
       border: none;
       vertical-align: middle;
+
+      &.col-icon {
+        width: 58px;
+        padding-left: 32px;
+        text-align: center;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        color: $sp-text-light;
+      }
     }
 
     .name-cell {
       display: flex;
       align-items: center;
       gap: 10px;
+      position: relative;
+
+      .sp-icon-pink {
+        position: absolute;
+        top: 10px;
+        left: -8px;
+        font-size: 10px;
+      }
     }
   }
 }

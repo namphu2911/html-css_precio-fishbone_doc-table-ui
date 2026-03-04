@@ -38,7 +38,7 @@ body {
   white-space: nowrap;
 }
 .sp-btn:hover {
-  background: #f4f4f4;
+  background: #ffffff;
 }
 
 .sp-icon-pink {
@@ -62,6 +62,7 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 0;
+  background-color: #f3f3f3;
 }
 
 .sp-hamburger-btn {
@@ -133,7 +134,7 @@ body {
 /* ============ TITLE ============ */
 .sp-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 100;
   color: #333333;
   margin: 20px 0 24px 0;
   padding: 0;
@@ -152,11 +153,11 @@ body {
   margin: 0;
 }
 .sp-table thead tr {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 2px solid #d6d6d6;
 }
 .sp-table thead th {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   color: #666666;
   padding: 8px 12px 8px 0;
   text-align: left;
@@ -164,28 +165,30 @@ body {
   border: none;
   background: transparent;
 }
+.sp-table thead th.col-icon {
+  width: 58px;
+  padding-left: 32px;
+}
 .sp-table thead th .th-icon {
-  font-size: 14px;
+  font-size: 18px;
   color: #666666;
-  margin-right: 6px;
 }
 .sp-table thead th .th-text {
-  color: #666666;
+  color: #333333;
 }
 .sp-table thead th .th-chevron {
-  font-size: 8px;
+  font-size: 14px;
   color: #666666;
-  margin-left: 4px;
-}
-.sp-table thead .add-column {
-  color: #666666;
-  font-size: 12px;
 }
 .sp-table tbody tr {
   border-bottom: 1px solid #e5e5e5;
+  background-color: transparent;
 }
 .sp-table tbody tr:hover {
-  background: #f4f4f4;
+  background-color: #f4f4f4 !important;
+}
+.sp-table tbody tr:hover td {
+  background-color: #f4f4f4;
 }
 .sp-table tbody td {
   padding: 14px 12px 14px 0;
@@ -194,15 +197,30 @@ body {
   border: none;
   vertical-align: middle;
 }
+.sp-table tbody td.col-icon {
+  width: 58px;
+  padding-left: 32px;
+  text-align: center;
+}
+.sp-table tbody td:nth-child(3), .sp-table tbody td:nth-child(4) {
+  color: #666666;
+}
 .sp-table tbody .name-cell {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+}
+.sp-table tbody .name-cell .sp-icon-pink {
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  font-size: 10px;
 }
 
 .folder-icon {
   font-size: 18px;
-  color: #dcb67a;
+  color: #a6a6a6;
 }
 
 .excel-icon {
