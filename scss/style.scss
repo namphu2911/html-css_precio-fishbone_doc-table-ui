@@ -1,0 +1,278 @@
+// SharePoint/OneDrive Classic Colors
+$sp-text: #333333;
+$sp-text-light: #666666;
+$sp-border: #e5e5e5;
+$sp-hover: #f4f4f4;
+$sp-pink: #b4009e;
+$sp-green: #217346;
+$sp-folder: #dcb67a;
+$sp-excel: #217346;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  background: #fff;
+  color: $sp-text;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.sp-container {
+  max-width: 100%;
+}
+
+/* ============ TOOLBAR (Desktop) ============ */
+.sp-toolbar {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background-color: #f4f4f4;
+}
+
+.sp-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $sp-text;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background: $sp-hover;
+  }
+}
+
+.sp-icon-pink {
+  color: $sp-pink;
+  font-size: 16px;
+}
+
+.sp-icon-green {
+  color: $sp-green;
+  font-size: 16px;
+}
+
+.sp-chevron {
+  font-size: 14px;
+  color: $sp-text-light;
+  margin: 2px 0 0 2px;
+}
+
+/* ============ MOBILE HEADER ============ */
+.sp-mobile-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.sp-hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 36px;
+  background: #fafafa;
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 8px;
+
+  &:hover {
+    background: #f0f0f0;
+  }
+
+  .hamburger-line {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #333;
+  }
+}
+
+/* ============ MOBILE MENU ============ */
+.sp-mobile-menu {
+  background: #fff;
+  border: 1px solid $sp-border;
+  margin-bottom: 10px;
+}
+
+.sp-mobile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  color: $sp-text;
+  text-decoration: none;
+  border-bottom: 1px solid $sp-border;
+  font-size: 14px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: $sp-hover;
+  }
+
+  i:first-child {
+    font-size: 16px;
+    width: 18px;
+    text-align: center;
+  }
+
+  span {
+    flex: 1;
+  }
+
+  .sp-chevron {
+    margin-left: auto;
+  }
+}
+
+.sp-menu-highlight {
+  background: #e8f5e9;
+
+  &:hover {
+    background: #dcedc8;
+  }
+}
+
+/* ============ TITLE ============ */
+.sp-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: $sp-text;
+  margin: 20px 0 24px 0;
+  padding: 0;
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+    margin: 10px 0 16px 0;
+  }
+}
+
+/* ============ TABLE (Desktop) ============ */
+.sp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+
+  thead {
+    tr {
+      border-bottom: 1px solid $sp-border;
+    }
+
+    th {
+      font-weight: 400;
+      font-size: 12px;
+      color: $sp-text-light;
+      padding: 8px 12px 8px 0;
+      text-align: left;
+      vertical-align: middle;
+      border: none;
+      background: transparent;
+
+      .th-icon {
+        font-size: 14px;
+        color: $sp-text-light;
+        margin-right: 6px;
+      }
+
+      .th-text {
+        color: $sp-text-light;
+      }
+
+      .th-chevron {
+        font-size: 8px;
+        color: $sp-text-light;
+        margin-left: 4px;
+      }
+    }
+
+    .add-column {
+      color: $sp-text-light;
+      font-size: 12px;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $sp-border;
+
+      &:hover {
+        background: $sp-hover;
+      }
+    }
+
+    td {
+      padding: 14px 12px 14px 0;
+      font-size: 14px;
+      color: $sp-text;
+      border: none;
+      vertical-align: middle;
+    }
+
+    .name-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.folder-icon {
+  font-size: 18px;
+  color: $sp-folder;
+}
+
+.excel-icon {
+  font-size: 18px;
+  color: $sp-excel;
+}
+
+/* ============ MOBILE CARD LIST ============ */
+.sp-mobile-list {
+  padding: 0;
+}
+
+.sp-mobile-card {
+  padding: 16px 0;
+  border-bottom: 1px solid $sp-border;
+}
+
+.sp-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4px 0;
+}
+
+.sp-card-label {
+  font-size: 13px;
+  color: $sp-text-light;
+  font-weight: 400;
+}
+
+.sp-card-value {
+  font-size: 13px;
+  color: $sp-text;
+  text-align: right;
+  word-break: break-word;
+  max-width: 65%;
+
+  i {
+    font-size: 16px;
+  }
+}

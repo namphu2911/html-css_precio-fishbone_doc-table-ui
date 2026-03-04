@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Documents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sp-container">
+
+  <!-- Desktop Toolbar -->
+  <div class="sp-toolbar d-none d-md-flex align-items-center">
+    <button class="sp-btn">
+      <i class="bi bi-plus-lg sp-icon-pink"></i> New <i class="bi bi-chevron-down sp-chevron"></i>
+    </button>
+    <button class="sp-btn">
+      <i class="bi bi-box-arrow-up sp-icon-pink"></i> Upload <i class="bi bi-chevron-down sp-chevron"></i>
+    </button>
+    <button class="sp-btn">
+      <i class="bi bi-arrow-repeat sp-icon-pink"></i> Sync
+    </button>
+    <button class="sp-btn">
+      <i class="bi bi-file-earmark-spreadsheet sp-icon-green"></i> Export to Excel
+    </button>
+    <button class="sp-btn">
+      <i class="bi bi-share sp-icon-pink"></i> Flow <i class="bi bi-chevron-down sp-chevron"></i>
+    </button>
+    <button class="sp-btn">
+      <i class="bi bi-three-dots"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Header with Hamburger -->
+  <div class="sp-mobile-header d-md-none">
+    <button class="sp-hamburger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="collapse d-md-none" id="mobileMenu">
+    <div class="sp-mobile-menu">
+      <a href="#" class="sp-mobile-menu-item">
+        <i class="bi bi-plus sp-icon-pink"></i> 
+        <span>New</span>
+        <i class="bi bi-chevron-down sp-chevron"></i>
+      </a>
+      <a href="#" class="sp-mobile-menu-item">
+        <i class="bi bi-box-arrow-up sp-icon-pink"></i> 
+        <span>Upload</span>
+        <i class="bi bi-chevron-down sp-chevron"></i>
+      </a>
+      <a href="#" class="sp-mobile-menu-item">
+        <i class="bi bi-arrow-repeat sp-icon-pink"></i> 
+        <span>Sync</span>
+      </a>
+      <a href="#" class="sp-mobile-menu-item sp-menu-highlight">
+        <i class="bi bi-file-earmark-spreadsheet sp-icon-green"></i> 
+        <span>Export to Excel</span>
+      </a>
+      <a href="#" class="sp-mobile-menu-item">
+        <i class="bi bi-share sp-icon-pink"></i> 
+        <span>Flow</span>
+        <i class="bi bi-chevron-down sp-chevron"></i>
+      </a>
+      <a href="#" class="sp-mobile-menu-item">
+        <i class="bi bi-three-dots"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <h1 class="sp-title">Documents</h1>
+
+  <!-- Desktop Table -->
+  <div class="table-responsive d-none d-md-block">
+    <table class="table sp-table">
+      <thead>
+        <tr>
+          <th>
+            <i class="bi bi-file-earmark th-icon"></i>
+            <span class="th-text">Name</span>
+            <i class="bi bi-chevron-down th-chevron"></i>
+          </th>
+          <th>
+            <span class="th-text">Modified</span>
+            <i class="bi bi-chevron-down th-chevron"></i>
+          </th>
+          <th>
+            <span class="th-text">Modified By</span>
+            <i class="bi bi-chevron-down th-chevron"></i>
+          </th>
+          <th class="add-column">+ Add column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name-cell">
+            <i class="bi bi-folder-fill folder-icon"></i>
+            <span>CAS</span>
+          </td>
+          <td>April 30</td>
+          <td>Megan Bowen</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="name-cell">
+            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <span>CoasterAndBargeLoading.xlsx</span>
+          </td>
+          <td>A few seconds ago</td>
+          <td>Administrator MOD</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="name-cell">
+            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <span>RevenueByServices.xlsx</span>
+          </td>
+          <td>A few seconds ago</td>
+          <td>Administrator MOD</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="name-cell">
+            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <span>RevenueByServices2016.xlsx</span>
+          </td>
+          <td>A few seconds ago</td>
+          <td>Administrator MOD</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="name-cell">
+            <i class="bi bi-filetype-xlsx excel-icon"></i>
+            <span>RevenueByServices2017.xlsx</span>
+          </td>
+          <td>A few seconds ago</td>
+          <td>Administrator MOD</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile Card List -->
+  <div class="d-md-none sp-mobile-list">
+
+    <!-- CAS Folder -->
+    <div class="sp-mobile-card">
+      <div class="sp-card-row">
+        <span class="sp-card-label">File Type</span>
+        <span class="sp-card-value"><i class="bi bi-folder-fill folder-icon"></i></span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Name</span>
+        <span class="sp-card-value">CAS</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified</span>
+        <span class="sp-card-value">April 30</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified By</span>
+        <span class="sp-card-value">Megan Bowen</span>
+      </div>
+    </div>
+
+    <!-- CoasterAndBargeLoading.xlsx -->
+    <div class="sp-mobile-card">
+      <div class="sp-card-row">
+        <span class="sp-card-label">File Type</span>
+        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Name</span>
+        <span class="sp-card-value">CoasterAndBargeLoading.xlsx</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified</span>
+        <span class="sp-card-value">A few seconds ago</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified By</span>
+        <span class="sp-card-value">Administrator MOD</span>
+      </div>
+    </div>
+
+    <!-- RevenueByServices.xlsx -->
+    <div class="sp-mobile-card">
+      <div class="sp-card-row">
+        <span class="sp-card-label">File Type</span>
+        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Name</span>
+        <span class="sp-card-value">RevenueByServices</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified</span>
+        <span class="sp-card-value">A few seconds ago</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified By</span>
+        <span class="sp-card-value">Administrator MOD</span>
+      </div>
+    </div>
+
+    <!-- RevenueByServices2016.xlsx -->
+    <div class="sp-mobile-card">
+      <div class="sp-card-row">
+        <span class="sp-card-label">File Type</span>
+        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Name</span>
+        <span class="sp-card-value">RevenueByServices2016</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified</span>
+        <span class="sp-card-value">A few seconds ago</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified By</span>
+        <span class="sp-card-value">Administrator MOD</span>
+      </div>
+    </div>
+
+    <!-- RevenueByServices2017.xlsx -->
+    <div class="sp-mobile-card">
+      <div class="sp-card-row">
+        <span class="sp-card-label">File Type</span>
+        <span class="sp-card-value"><i class="bi bi-filetype-xlsx excel-icon"></i></span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Name</span>
+        <span class="sp-card-value">RevenueByServices2017</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified</span>
+        <span class="sp-card-value">A few seconds ago</span>
+      </div>
+      <div class="sp-card-row">
+        <span class="sp-card-label">Modified By</span>
+        <span class="sp-card-value">Administrator MOD</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
